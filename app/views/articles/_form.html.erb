@@ -1,13 +1,9 @@
 <div class="container">
-    <% if @article.errors.any? %>
-        <h3>Error creating the new article</h3>
-        <ul>
-            <% @article.errors.full_messages.each do |msg| %>
-                <li> <%= msg%></li>
-            <%end%>
-        </ul>
-    <% end %>
-
+    <div class="row d-flex justify-content-center">
+        <div class="col-10">
+            <%= render 'shared/errors'%>
+        </div>
+    </div>
     <div class="row d-flex justify-content-center">
         <div class="col-10">
             <%= form_with(model: @article, class: "shadow bg-info mb-3 p-3 rounded" , local: true) do |f| %>

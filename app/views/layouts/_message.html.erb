@@ -1,6 +1,13 @@
-<div class="bg-light">
+<div class="container">
   <% flash.each do |name, message| %>
-    <small> 12344<span class="badge badge-info"> <%= message %> </span> </small>
+    <div class="row d-flex justify-content-center">
+      <div class="col-auto">
+        <div class="alert alert-success alert-dismissable fade show">
+          <%= message %>
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+      </div>
+    </div>
   <% end %>
 </div>
 <%= yield %>
