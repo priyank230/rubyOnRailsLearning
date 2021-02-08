@@ -1,0 +1,23 @@
+@import 'bootstrap/dist/css/bootstrap';
+
+// .navbar-bg {
+//     background-color: beige;
+// }
+html,
+body {
+    height: 100%;
+}
+
+.jumbotron {
+    background-image: asset-url('BlogHome.webp') !important;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #daf7ab;
+    height: 70vh;
+}
+
+#home-page {
+    flex: 1 0 auto;
+    background-color: lightgrey;
+}
