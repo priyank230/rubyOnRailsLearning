@@ -1,4 +1,6 @@
-<% flash.each do |name, message| %>
-    <%= message %>  
+<div class="bg-light">
+  <% flash.each do |name, message| %>
+    <small> 12344<span class="badge badge-info"> <%= message %> </span> </small>
   <% end %>
-  <%= yield %>
+</div>
+<%= yield %>
