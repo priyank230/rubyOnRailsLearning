@@ -1,4 +1,4 @@
-<h1 class="text-center pt-4">Create Category</h1>
+<h1 class="text-center pt-4">Edit Category</h1>
 <hr>
 <div class="container">
     <div class="row d-flex justify-content-center">
@@ -6,7 +6,7 @@
             <%= render 'form' %>
         </div>
         <div class="col-4 d-flex justify-content-center text-info mb-3">
-            <%= link_to '[ Cancel and return to categories listing ]', categories_path, class: "text-info" %>
+            <%= link_to '[ Cancel and return to category ]', category_path(@category), class: "text-info" %>
         </div>
     </div>
 </div>
